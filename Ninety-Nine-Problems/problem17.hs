@@ -1,0 +1,1 @@
+split xs a = take a xs : [drop a xs]

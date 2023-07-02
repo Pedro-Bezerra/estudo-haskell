@@ -1,0 +1,1 @@
+removeAt a xs = (last(take a xs), take (a-1) xs ++ drop a xs)

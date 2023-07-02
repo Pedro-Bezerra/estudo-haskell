@@ -1,0 +1,1 @@
+insertAt elem l a = take (a-1) l ++ [elem] ++ drop (a-1) l
