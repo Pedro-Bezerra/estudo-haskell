@@ -4,8 +4,8 @@ merge lista1 lista2 = isort lista1 ++ isort lista2
 
 -- Revisar o insertion sort em Haskell
 
-insert :: Ord a => a -> [a] -> [a]
-insert x [] = [x]
+insert :: Ord a => a -> [a] -> [a]                     --[4, 5, 3, 1, 2, 6]
+insert x [] = [x]                                      --
 insert x (y:ys) | x < y     = x:y:ys
                 | otherwise = y:(insert x ys)
 
