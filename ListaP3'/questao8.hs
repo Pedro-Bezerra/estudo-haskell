@@ -1,4 +1,4 @@
-import Distribution.Simple.Utils (xargs)
+
 -- Alternativa a
 somaLista :: [Int] -> Int
 somaLista [] = 0

@@ -1,4 +1,3 @@
-import Text.XHtml (base, abbr)
 media3 :: Fractional a => a -> a -> a -> a
 media3 x y z = (x+y+z)/3
 
@@ -10,5 +9,10 @@ maiorQueMedia x y z = maior x m + y `maior` m + maior z m
                         where 
                             m = media3 x y z
 
+media :: (Eq a, Fractional a) => a -> a -> a -> a
+media a b c = (a + b + c)/3
 
+compare' :: (Eq a, Fractional a) => a -> a -> a -> Int
+compare' a b c = length (filter (\x -> x == media a b c) [a,b,c])
 teste = maiorQueMedia 9 6 3
+teste' = compare' 9 6 3

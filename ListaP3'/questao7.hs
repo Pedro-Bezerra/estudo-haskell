@@ -15,3 +15,12 @@ merge (x:xs) (y:ys) | x <= y = x : merge xs (y:ys)
                     | otherwise = y : merge (x:xs) ys
 
 -- [2, 4, 0, 1, 3]
+
+metades [] = ([], [])
+metades l = let meio = length l `div` 2
+            in splitAt meio l
+
+meuMergeSort [] = []
+meuMergeSort [x] = [x]
+meuMergeSort l = let (esq,dir) = metades l
+               in merge (meuMergeSort esq) (meuMergeSort dir)
