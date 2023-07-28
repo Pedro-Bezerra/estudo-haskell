@@ -1,3 +1,8 @@
+{- 
+1) (1,0) Argumente o conceito de classes na linguagem Haskell. Qual a sua função na
+linguagem?
+-}
+
 {-
     Em Haskell, classes servem para agrupar uma quantidade de funções e compartilhá-las
     entre diferentes tipos (e.g.: Int, Float, String, Bool etc.) que a instanciam. Isto 

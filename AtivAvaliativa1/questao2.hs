@@ -1,3 +1,11 @@
+{-
+2) (4,0) Implemente uma função que recebe dois argumentos, o primeiro é uma outra
+função e o segundo é uma lista. Sua função deve produzir uma nova lista que é o
+resultado da aplicação da função recebida como parâmetro a cada elemento da lista.
+Implemente a função usando duas técnicas diferentes: recursão e compreensão de
+listas.
+-}
+
 meuMap :: (a -> b) -> [a] -> [b]
 meuMap funcao [] = []
 meuMap funcao (x:xs) = funcao x : meuMap funcao xs
