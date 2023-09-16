@@ -5,6 +5,7 @@ Ex: meuSplit &quot;UNIVERSIDADE DE PERNAMBUCO&quot; &#39; &#39; -&gt; [&quot;UNI
 &quot;PERNAMBUCO&quot;]
 -}
 
+meuSplit :: Eq t => [t] -> t -> [[t]]
 meuSplit [] _ = []
 meuSplit xs char = takeWhile (/=char) xs : meuSplit pedaco char
     where

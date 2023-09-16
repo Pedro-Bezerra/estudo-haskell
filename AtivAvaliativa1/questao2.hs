@@ -14,5 +14,6 @@ meuMap' :: (a -> b) -> [a] -> [b]
 meuMap' funcao xs = [funcao x | x <- xs]
 
 -- Exercício da playlist de Fernando Castor
+meuMap'' :: (a1 -> [a2] -> [a2]) -> [a1] -> [a2]
 meuMap'' funcao [] = []
 meuMap'' funcao (x:xs) = foldr funcao [] [x] ++ meuMap'' funcao xs
